@@ -1,0 +1,62 @@
+﻿#include "AESwindow.h"
+#include "ui_AES.h"
+
+
+AESwindow::AESwindow(QWidget *parent)
+    : QWidget(parent)
+    , ui(new Ui::AESwindow)
+{
+    ui->setupUi(this);
+
+
+    //设置信号
+    /*
+    connect(key_button,SIGNAL(clicked(bool)),this,SLOT(key_click()));
+    connect(plain_button,SIGNAL(clicked(bool)),this,SLOT(soft_aes_plain()));
+    connect(enc_button,SIGNAL(clicked(bool)),this,SLOT(enc_click()));
+    connect(type_button,SIGNAL(clicked(bool)),this,SLOT(soft_aes_type()));
+    connect(dec_button,SIGNAL(clicked(bool)),this,SLOT(dec_click()));
+    connect(cipher_button,SIGNAL(clicked(bool)),this,SLOT(cipher_click()));
+    connect(back_button,SIGNAL(clicked(bool)),this,SLOT(back_click()));
+    */
+}
+
+AESwindow::~AESwindow()
+{
+    delete ui;
+}
+void AESwindow::back_click()
+{
+    emit sendsignal();
+    this->close();
+}
+
+
+
+void AESwindow::soft_aes_type()
+{
+
+
+}
+
+void AESwindow::enc_click()
+{
+
+}
+
+void AESwindow::key_click()
+{
+
+}
+
+void AESwindow::cipher_click()
+{
+
+}
+
+void AESwindow::dec_click()
+{
+
+}
+
+
